@@ -1,0 +1,36 @@
+{
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "webpack-dev-server --hot --host localhost --port 3000 --config=./webpack.dev.config.js --watch --open",
+    "buildw": "set NODE_ENV='production' & ./node_modules/.bin/webpack --config webpack.production.config.js --progress",
+    "build": "webpack --config webpack.production.config.js --progress"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "author": "c0b41 <cobaimelan@protonmail.ch>",
+  "devDependencies": {
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "ejs-compiled-loader": "^1.1.0",
+    "expose-loader": "^0.7.5",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  }
+}
